@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Urban Residential</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">Urban Residential</a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./properties.html">Properties</a></li>
+                    <li><a href="./login.html" id="loginButton">Login</a></li>
+                    <li> <button id="logoutButton" style="display: none;">Logout</button></li>
+                    <li><a id="addPropertyButton" href="./add-property.html" style="display: none;">Add Property</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="properties">
+            <div class="container">
+                <h1>Available Properties</h1>
+                <div id="propertyList" class="property-grid">
+                    <!-- Properties will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Urban Residential Properties. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
