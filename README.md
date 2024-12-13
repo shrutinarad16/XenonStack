@@ -1,6 +1,6 @@
-##Features
+## Features
 
-###User Authentication
+### User Authentication
 - **Registration**: Users can register with their name, email, password, and role (Property Dealer or Regular User).
 - **Login**: Users can log in with their email and password.
 - **Token-Based Authentication**: Secure JWT tokens are used to authenticate users.
@@ -8,17 +8,17 @@
   - Regular users can view properties.
   - Property Dealers can add new properties.
 
-###Property Management
+### Property Management
 - **Add Property**: Property Dealers can add new properties by providing details like title, location, price, and image.
 - **View Properties**: All users can view the list of available properties.
 
-##Tech Stack
-###Frontend
+## Tech Stack
+### Frontend
 - **HTML**: Structure of the pages.
 - **CSS**: Styling of the UI components.
 - **JavaScript**: Handles API calls and dynamic UI updates.
 
-###Backend
+### Backend
 - **Node.js**: Backend server.
 - **Express.js**: Web framework for Node.js.
 - **MongoDB**: Database to store user and property data.
@@ -29,13 +29,13 @@
 
 ---
 
-##Setup Instructions
+## Setup Instructions
 
-###Prerequisites
+### Prerequisites
 - Install [Node.js](https://nodejs.org/)
 - Install [MongoDB](https://www.mongodb.com/)
 
-###Installation
+### Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repo/real-estate-management-app.git
@@ -58,18 +58,18 @@
 
 ---
 
-##ScreenShots
+## ScreenShots
 
 
-###Home Page
+### Home Page
 ![img2](https://github.com/user-attachments/assets/22cfdbd9-38f0-4849-ba5e-800e4c529624)
 
-###Authentication
+### Authentication
 
 ![img1](https://github.com/user-attachments/assets/3782f633-1225-46d2-b9cc-eb02047d9d3c)
 
 
-###Properties
+### Properties
 ![img3](https://github.com/user-attachments/assets/27474721-144c-4767-8037-441ce2e25eaa)
 
 ![img4](https://github.com/user-attachments/assets/f25ccf57-2677-4252-a0d0-ef9c16c5d051)
