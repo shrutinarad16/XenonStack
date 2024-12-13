@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
+require('dotenv').config();
 
 
 const app = express();
@@ -12,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 // mongodb connection
-mongoose.connect('mongodb+srv://gautamkumar732380:Fzd2G0H6XOAFqCsZ@cluster0.sfezr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect(process.env.MONGODB_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log('MongoDB connected')).catch(err => console.log(err));
@@ -39,9 +40,6 @@ const PropertySchema = new mongoose.Schema({
 });
 const Property = mongoose.model('Property', PropertySchema);
 
-// jwt secret
-
-const JWT_SECRET = 'a776606ff336ff1445bd72c66071504e7402c102bfc385c5e0f20018e5da57aa76fb73d4ae62edaa169bf9e42b2833b126006c5463d6fc34cc5985e0bf8c3e56';
 
 // helper function to authenticate user
 
@@ -50,7 +48,7 @@ function authenticate(req, res, next) {
     if (!token) return res.status(401).json({ message: "Unauthorized" })
 
     try {
-        const decoded = jwt.verify(token, JWT_SECRET);
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
         req.user = decoded;
         next();
     } catch (error) {
@@ -93,7 +91,7 @@ app.post('/login', async (req, res) => {
         // Include isPropertyDealer in the JWT payload
         const token = jwt.sign(
             { id: user._id, isPropertyDealer: user.isPropertyDealer },
-            JWT_SECRET,
+            process.env.JWT_SECRET,
             { expiresIn: '1h' }
         );
 
@@ -148,7 +146,4 @@ app.get('/properties', async (req, res) => {
         res.status(500).json({ message: 'Error fetching properties', error: err.message });
     }
 });
-
-
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`)); 
+module.exports = app;
