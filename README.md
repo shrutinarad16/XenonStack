@@ -75,7 +75,10 @@
 ![img4](https://github.com/user-attachments/assets/f25ccf57-2677-4252-a0d0-ef9c16c5d051)
 
 ## Deployment Link
+ ### Static Website
 https://gleeful-jelly-1ca2cc.netlify.app/
 
+ ### Dynamic Website
+ 
 
 
