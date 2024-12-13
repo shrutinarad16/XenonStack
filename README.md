@@ -59,20 +59,20 @@
 ---
 
 ##ScreenShots
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+
 
 ###Home Page
-
-![Getting Started](./screenshots/img2.png)
+![img2](https://github.com/user-attachments/assets/22cfdbd9-38f0-4849-ba5e-800e4c529624)
 
 ###Authentication
 
-![Getting Started](./screenshots/img1.png)
+![img1](https://github.com/user-attachments/assets/3782f633-1225-46d2-b9cc-eb02047d9d3c)
+
 
 ###Properties
+![img3](https://github.com/user-attachments/assets/27474721-144c-4767-8037-441ce2e25eaa)
 
-![Getting Started](./screenshots/img3.png)
+![img4](https://github.com/user-attachments/assets/f25ccf57-2677-4252-a0d0-ef9c16c5d051)
 
-![Getting Started](./screenshots/img4.png)
 
 
