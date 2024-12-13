@@ -58,6 +58,15 @@
 
 ---
 
+
+## Uniqeness
+ 1. Responsive Design
+ 2. Search with Preferences
+ 3. Best Property Find Out
+ 4. Dealer and Customer Registration on same portal
+ 5. User Friendly UI
+ 6. Easy Navigation
+
 ## ScreenShots
 
 
