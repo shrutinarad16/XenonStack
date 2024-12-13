@@ -147,3 +147,7 @@ app.get('/properties', async (req, res) => {
     }
 });
 module.exports = app;
+
+const PORT = 5000;
+
+app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
