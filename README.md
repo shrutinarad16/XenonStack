@@ -42,7 +42,7 @@
    ```
 2. Navigate to the project folder:
    ```bash
-   cd real-estate-management-app
+   cd XenonStack
    ```
 3. Install dependencies:
    ```bash
